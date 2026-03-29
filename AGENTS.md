@@ -7,8 +7,8 @@ Guidelines for AI agents working in this repository.
 ## Project Overview
 
 A baby monitor system consisting of:
-- **`app/`** — Flutter mobile app (iOS & Android)
-- **`backend/`** — Python server running on a Raspberry Pi
+- **`babymonitor/`** — Flutter mobile app (iOS & Android)
+- **`raspberry-hub/`** — Python server running on a Raspberry Pi
 
 The Pi handles camera and microphone capture and exposes a streaming API. The Flutter app connects to the Pi over a local network (home WiFi, mobile hotspot, or Pi access point mode).
 
@@ -18,7 +18,7 @@ The Pi handles camera and microphone capture and exposes a streaming API. The Fl
 
 ```
 /
-├── app/                        # Flutter application
+├── babymonitor/                # Flutter application
 │   ├── lib/
 │   │   ├── core/               # Shared utilities, constants, error types
 │   │   ├── design/             # Design tokens, theme, typography, colors
@@ -30,7 +30,7 @@ The Pi handles camera and microphone capture and exposes a streaming API. The Fl
 │   └── test/
 │       └── features/<feature>/ # Mirrors lib/features structure
 │
-├── backend/                    # Python server (runs on Raspberry Pi)
+├── raspberry-hub/              # Python server (runs on Raspberry Pi)
 │   ├── src/
 │   │   ├── api/                # Route handlers, request/response schemas
 │   │   ├── domain/             # Business logic, use cases, domain models

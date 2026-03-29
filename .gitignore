@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Flutter
+babymonitor/.dart_tool/
+babymonitor/.flutter-plugins
+babymonitor/.flutter-plugins-dependencies
+babymonitor/build/
+babymonitor/android/
+babymonitor/ios/
+babymonitor/linux/
+babymonitor/macos/
+babymonitor/windows/
+babymonitor/web/
+
+# IDE
+.idea/
+.vscode/
+*.swp
